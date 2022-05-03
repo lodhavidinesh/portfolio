@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap');
+.nav-link {
+    /*color: rgb(255, 255, 255) !important;*/
+    margin: 15px;
+    /*font-family: 'Smooch Sans', sans-serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #3291e3 !important;
+}
+
+/*body,html {
+  margin: 0;
+  background: #000;
+}*/
+ul { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  color: rgb(255, 255, 255) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.navbar-nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: yellow;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+
+.nav-link:hover {
+    /*transform: scale(1.3);*/
+    /*transition: transform .1s  .1s;*/
+    color: yellow !important;
+    /*font-size: larger;*/
+}
+
+@keyframes header {
+    0% {
+        border-bottom: 20px;
+    }
+
+    25% {
+        border-bottom: 40px;
+    }
+
+    50% {
+        border-bottom: 60px;
+    }
+
+}
+.navbar-toggler-icon {
+    background-image: url("icons8-top-menu-96.png")!important;
+  }
+   #name{
+    font-family: 'Smooch Sans', sans-serif; 
+  }
+.project{
+      border-radius: 16%;
+  }
+
+ 
+
+
+
+  /* Blur-zoom Container */
+.imgborder  {
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  /*filter: blur(2px);*/
+  /*transform: scale(1.2);*/
+}
+
+/* The Transformation */
+.imgborder:hover  {
+  /*filter: blur(0);*/
+  transform: scale(1.1);
+}
+
+section h2{
+  color: white;
+  text-align:  center;
+  border: 1px solid yellow;
+  background-color: #e9e998;
+}
+.project{
+  text-align: center;
+  
+}
+p .h3{
+  color: aqua !important;
+}
+.navbar-toggler-icon{
+    background-image: url("imgs/menu.png") !important;
+}
+section div .col-lg-6{
+    align-items: center;
+}
